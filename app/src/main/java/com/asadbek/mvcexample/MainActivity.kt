@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity(),Observer {
 
     }
 
-    // observable funksiyasi, o`zgaruvlarni yangilab turuvchi
+    // observable ga tegishli funksiya
     override fun update(p0: Observable?, p1: Any?) {
         binding.button.text = "Count: " + myModel?.getValueIndex(0)
         binding.button2.text = "Count: " + myModel?.getValueIndex(1)
